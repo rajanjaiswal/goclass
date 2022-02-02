@@ -77,7 +77,7 @@ func sum(nums ...int) { // this is variadic function ...int or ...string
 		fmt.Println(total)
 	}
 	sum(1, 2, 3)
-
+	// THE BELOW PROGRAM IS FUNCTION INSIDE THE FUNCTION  I.E CLOSERS
 	nextSeq := seq()
 	fmt.Println(nextSeq()) // i++ = 1
 	fmt.Println(nextSeq()) // i++ = 2
