@@ -1,10 +1,9 @@
 package main
 
-import (
-	"github.com/rajanjaiswal/goclass/structure"
-	//	"github.com/rajanjaiswal/goclass/initials"
-	//	"github.com/rajanjaiswal/goclass/maintwo"
-)
+import "github.com/rajanjaiswal/goclass/goroutines"
+
+//	"github.com/rajanjaiswal/goclass/initials"
+//	"github.com/rajanjaiswal/goclass/maintwo"
 
 func main() {
 	//arraypractise.Test()
@@ -13,6 +12,11 @@ func main() {
 	//datastructure.Init()
 	//structure.Init()
 	//structure.Init2()
-	structure.Init3()
-
+	//structure.Init3( )
+	//goroutines.InitErrorStrategy()
+	//goroutines.Init()
+	//goroutines.Init2()
+	//goroutines.InitClosingChannels()
+	goroutines.InitDeferExamples()
+	//formattingexample.InitFormattingExamples()
 }
