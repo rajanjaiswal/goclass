@@ -1,0 +1,34 @@
+
+    // javascript object notation (Json)
+    // in json we usually use lower case letter
+    //in json same key is not allowed but value can be same 
+    
+    {
+        "page" : 1,
+        "data" : [{
+      "first_name": "Ram",
+      "last_name": "Berma",
+      "age": 24,
+      "married": false,
+      "address": [
+        {
+          "type1": "home",
+          "country1": "Nepal",
+          "street1": "butwal"
+        },
+        {
+          "type2": "office",
+          "country2": "Nepa2",
+          "street2": "butwa2"
+        }
+      ],
+      "phone": [
+        {
+          "home": "98412355"
+        },
+        {
+          "office": "98776778"
+      }
+        ]
+    }]
+    }

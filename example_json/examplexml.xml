@@ -1,0 +1,38 @@
+<0>
+    <first_name>Ram</first_name>
+    <last_name>Berma</last_name>
+    <age>24</age>
+    <married>false</married>
+    <address>
+        <type>home</type>
+        <country>Nepal</country>
+        <street>butwal</street>
+    </address>
+    <address>
+        <type>office</type>
+        <country>Nepal</country>
+        <street>butwal</street>
+    </address>
+    <phone>
+        <home>98412355</home>
+    </phone>
+    <phone>
+        <office>98776778</office>
+    </phone>
+</0>
+<1>
+    <first_name>Ram1</first_name>
+    <last_name>Berma1</last_name>
+    <age>24</age>
+    <married>true</married>
+    <address>
+        <type>home1</type>
+        <country>Nepal</country>
+        <street>butwal</street>
+    </address>
+    <address>
+        <type>office1</type>
+        <country>Nepal</country>
+        <street>butwal</street>
+    </address>
+</1>
