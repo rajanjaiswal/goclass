@@ -1,7 +1,5 @@
 package main
 
-import "github.com/rajanjaiswal/goclass/goroutines"
-
 //	"github.com/rajanjaiswal/goclass/initials"
 //	"github.com/rajanjaiswal/goclass/maintwo"
 
@@ -17,6 +15,12 @@ func main() {
 	//goroutines.Init()
 	//goroutines.Init2()
 	//goroutines.InitClosingChannels()
-	goroutines.InitDeferExamples()
+	//goroutines.InitDeferExamples()
 	//formattingexample.InitFormattingExamples()
+	//examplejson.InitExampleJson()
+	//examplejson.InitExampleFile()
+	//examplejson.InitExampleFileWrite()
+	//examplejson.Initxmltojson2()
+	//fmt.Println(assignment.IntMin(1, 5))
+
 }

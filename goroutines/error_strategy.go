@@ -12,7 +12,7 @@ func InitErrorStrategy() {
 		fmt.Println("Error =", err) //this can be used instead of panic
 		//	panic(err) //its used to give high level security or
 	}
-	//fmt.Println("Value =", value) // wirite value instead of _ in the line 10
+	//fmt.Println("Value =", value) // wirite value instead of _ in the line 10 while using this line
 }
 
 func f1(arg int) (int, error) {

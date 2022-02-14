@@ -1,10 +1,9 @@
 
-    // javascript object notation (Json)
-    // in json we usually use lower case letter
-    //in json same key is not allowed but value can be same 
+   
     
     {
-        "page" : 1,
+        "page" : 1,    
+        
         "data" : [{
       "first_name": "Ram",
       "last_name": "Berma",
