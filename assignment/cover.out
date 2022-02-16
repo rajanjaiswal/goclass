@@ -1,0 +1,16 @@
+mode: set
+github.com/rajanjaiswal/goclass/assignment/assignment.go:5.18,8.27 3 0
+github.com/rajanjaiswal/goclass/assignment/assignment.go:19.2,20.40 2 0
+github.com/rajanjaiswal/goclass/assignment/assignment.go:8.27,9.15 1 0
+github.com/rajanjaiswal/goclass/assignment/assignment.go:9.15,12.4 1 0
+github.com/rajanjaiswal/goclass/assignment/assignment.go:12.9,16.4 1 0
+github.com/rajanjaiswal/goclass/assignment/questions.go:8.27,9.11 1 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:12.2,12.10 1 0
+github.com/rajanjaiswal/goclass/assignment/questions.go:9.11,11.3 1 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:15.50,17.11 1 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:21.2,21.42 1 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:24.2,26.16 2 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:31.2,33.43 3 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:17.11,19.3 1 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:21.42,23.3 1 1
+github.com/rajanjaiswal/goclass/assignment/questions.go:26.16,28.3 1 0

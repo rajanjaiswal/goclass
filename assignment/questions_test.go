@@ -5,17 +5,17 @@ import (
 	"testing"
 )
 
-func TestIntMin(t *testing.T) {
+//func TestIntMin(t *testing.T) {
 
-	min := IntMin(1, 5)
-	if min == 1 {
+//min := IntMin(1, 5)
+//if min == 1 {
 
-		t.Errorf("Expected = %d; got =%d", 1, min)
+//	t.Errorf("Expected = %d; got =%d", 1, min)
 
-	}
-}
+//	}
+//}
 
-func TestIntMinWithTable(t *testing.T) {
+func TestIntMinWithTabl(t *testing.T) {
 	type args struct {
 		a, b int
 	}
@@ -63,23 +63,30 @@ func TestIntMinWithTable(t *testing.T) {
 	}
 }
 
+func BenchmarkIntMin(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		IntMin(1, 3)
+	}
+}
+
 func TestCyclicRotate(t *testing.T) {
 	type args struct {
 		a []int
 		k int
 	}
 	var tests = []struct {
-		name string
-		args args
-		want []int
+		name      string
+		args      args
+		want      []int
+		wantError string
 	}{
 		{
 			name: "test1",
 			args: args{
 				a: []int{1, 2, 3},
-				k: 1,
+				k: -1,
 			},
-			want: []int{3, 1, 2},
+			wantError: "K can't be negative",
 		},
 		{
 			name: "test2",
@@ -117,10 +124,19 @@ func TestCyclicRotate(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			testing := CyclicRotate(tt.args.a, tt.args.k)
-			if !reflect.DeepEqual(testing, tt.want) {
+			testing, err := CyclicRotate(tt.args.a, tt.args.k)
+			if err != nil && !reflect.DeepEqual(err.Error(), tt.wantError) {
+				t.Errorf("Expected = %v: got = %v\n", tt.wantError, err.Error())
+
+			} else if !reflect.DeepEqual(testing, tt.want) {
 				t.Errorf("Expected = %d: got = %d\n", tt.want, testing)
 			}
 		})
+	}
+}
+
+func BenchmarkCyclicRotate(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		CyclicRotate([]int{1, 2, 3, 4, 5, 6, 7}, 10)
 	}
 }

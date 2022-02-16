@@ -1,5 +1,9 @@
 package main
 
+import (
+	exmphttp "github.com/rajanjaiswal/goclass/exmp_http"
+)
+
 //	"github.com/rajanjaiswal/goclass/initials"
 //	"github.com/rajanjaiswal/goclass/maintwo"
 
@@ -22,5 +26,10 @@ func main() {
 	//examplejson.InitExampleFileWrite()
 	//examplejson.Initxmltojson2()
 	//fmt.Println(assignment.IntMin(1, 5))
+	//argsWithName := os.Args
+	//args := argsWithName[1:]
+	//fmt.Print(args)
+	//formattingexample.InitNumberParsing(args[0])
+	exmphttp.InitHttpExample()
 
 }

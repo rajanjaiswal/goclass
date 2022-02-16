@@ -1,13 +1,20 @@
 package formattingexample
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+	"strconv"
+)
 
 type point struct {
 	x, y int
 }
 
-func InitFormattingExamples() {
-	p := point{10, 20}
+func InitFormattingExamples(x int, y int) (int, error) {
+	if x < 0 || y < 0 {
+		return 0, errors.New("x and y can't be negative")
+	}
+	p := point{x, y}
 	fmt.Printf("format 1 : %v \n", p)
 
 	fmt.Printf("format 2 : %+v \n", p)
@@ -49,4 +56,33 @@ func InitFormattingExamples() {
 	fmt.Printf("|%15s|%15s| \n", "Shyam", "Berma")
 	fmt.Printf("|%15s|%15s| \n", "Shyam", "Berma")
 	fmt.Printf("|%15s|%15s| \n", "---------------", "---------------")
+
+	return 1, nil
+}
+
+func InitNumberParsing(a string) {
+	i, err := strconv.ParseInt(a, 10, 64) // this is for base 10 that is decimal
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(i)
+
+	f, err := strconv.ParseFloat("10.6", 64)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(f)
+
+	k, err := strconv.ParseInt("1001", 2, 64) // this is for base 2 that is binary
+	if err != nil {
+		panic(err)
+	}
+	fmt.Println(k)
+
+	//l, err = strconv.Atoi("123")
+	//if err != nil {
+	//	panic(err)
+	//}
+	//fmt.Println(l)
+
 }
